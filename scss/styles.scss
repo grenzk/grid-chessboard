@@ -1,0 +1,25 @@
+@import "reset";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chessboard-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border: 5px solid #000000;
+  width: 40vw;
+  height: 40vw;
+}
+
+.square {
+  background-color: #eeee;
+  border: 1px solid black;
+}
