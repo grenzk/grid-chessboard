@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
-@import "reset", "animation";
+@import "reset", "variables", "animation", "loader", "moves";
 
-html, body {
+html,
+body {
   height: 100%;
-  font-family: 'Libre Baskerville', serif;
+  font-family: Helvetica, sans-serif;
+  background-color: $background-color;
 }
 
 body {
@@ -12,17 +13,25 @@ body {
   align-items: center;
 }
 
+#title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: $title-color;
+}
+
 .chessboard-container {
-  border: 10px solid rgb(64, 44, 17);
+  border: 10px solid $border-color; 
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   width: 30vw;
   height: 30vw;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 1%;
 }
 
 .square {
-  background-color: hsl(38, 84%, 70%);
+  background-color: map-get($square-colors, "yellowish");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +39,11 @@ body {
 }
 
 .row-odd:nth-child(even) {
-  background-color: hsl(34, 58%, 30%);
+  background-color: map-get($square-colors, "bluish");
 }
 
 .row-even:nth-child(odd) {
-  background-color: hsl(34, 58%, 30%);
+  background-color: map-get($square-colors, "bluish");
 }
 
 img {
@@ -54,61 +63,26 @@ img {
     }
 }
 
-/* moves */
+@media only screen and (max-width: 900px) {
 
-#e2 img {
-  animation-name: move-up-2;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
+  #title {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  .loader {
+    margin-top: 20px;
+  }
+
+  .chessboard-container {
+    border: 5px solid $border-color;
+  }
 }
 
-#e7 img {
-  animation-name: move-down-2;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
-}
+@media only screen and (min-width: 900px) {
 
-#f1 img {
-  animation-name: move-diagonal-3;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 8s;
+  .chessboard-container {
+    width: 600px;
+    height: 600px;
+  }
 }
-
-#b8 img {
-  animation-name: move-L-right;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 11s;
-}
-
-#d1 img {
-  animation-name: move-diagonal-4, move-diagonal-2;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards, forwards;
-  animation-delay: 13s, 19s;
-}
-
-#g8 img {
-  animation-name: move-L-left;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 16s;
-}
-
-#f7 img {
-    animation-name: remove-piece;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-delay: 18s;
-}
-

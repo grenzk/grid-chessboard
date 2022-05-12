@@ -5,28 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7ad1761d21.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="app.js" defer></script> -->
     <title>Grid Chessboard</title>
   </head>
   <body>
     <div id="main-container">
+      <h1 id="title">
+        <i class="fa-solid fa-chess-knight fa-flip-horizontal"></i> Chess
+      </h1>
       <div class="chessboard-container">
-        <div class="square row-odd"><img src="./assets/icons/sticker-style/icons8-rook-80.png"/></div>
-        <div class="square row-odd" id="b8"><img src="./assets/icons/sticker-style/icons8-knight-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/sticker-style/icons8-bishop-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/sticker-style/icons8-queen-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/sticker-style/icons8-king-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/sticker-style/icons8-bishop-80.png"/></div>
-        <div class="square row-odd" id="g8"><img src="./assets/icons/sticker-style/icons8-knight-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/sticker-style/icons8-rook-80.png"/></div>
-        <div class="square row-even"><img src="./assets/icons/sticker-style/icons8-pawn-80.png"/></div>
-        <div class="square row-even"><img src="./assets/icons/sticker-style/icons8-pawn-80.png"/></div>
-        <div class="square row-even"><img src="./assets/icons/sticker-style/icons8-pawn-80.png"/></div>
-        <div class="square row-even"><img src="./assets/icons/sticker-style/icons8-pawn-80.png"/></div>
-        <div class="square row-even" id="e7"><img src="./assets/icons/sticker-style/icons8-pawn-80.png"/></div>
-        <div class="square row-even" id="f7"><img src="./assets/icons/sticker-style/icons8-pawn-80.png"/></div>
-        <div class="square row-even"><img src="./assets/icons/sticker-style/icons8-pawn-80.png"/></div>
-        <div class="square row-even"><img src="./assets/icons/sticker-style/icons8-pawn-80.png"/></div>
+        <div class="square row-odd">
+          <img src="./assets/icons/sticker-style/icons8-rook-80.png" />
+        </div>
+        <div class="square row-odd" id="b8">
+          <img src="./assets/icons/sticker-style/icons8-knight-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/sticker-style/icons8-bishop-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/sticker-style/icons8-queen-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/sticker-style/icons8-king-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/sticker-style/icons8-bishop-80.png" />
+        </div>
+        <div class="square row-odd" id="g8">
+          <img src="./assets/icons/sticker-style/icons8-knight-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/sticker-style/icons8-rook-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/sticker-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/sticker-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/sticker-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/sticker-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-even" id="e7">
+          <img src="./assets/icons/sticker-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-even" id="f7">
+          <img src="./assets/icons/sticker-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/sticker-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/sticker-style/icons8-pawn-80.png" />
+        </div>
         <div class="square row-odd"></div>
         <div class="square row-odd"></div>
         <div class="square row-odd"></div>
@@ -59,22 +98,59 @@
         <div class="square row-even"></div>
         <div class="square row-even"></div>
         <div class="square row-even"></div>
-        <div class="square row-odd"><img src="./assets/icons/blue-style/icons8-pawn-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/blue-style/icons8-pawn-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/blue-style/icons8-pawn-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/blue-style/icons8-pawn-80.png"/></div>
-        <div class="square row-odd" id="e2"><img src="./assets/icons/blue-style/icons8-pawn-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/blue-style/icons8-pawn-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/blue-style/icons8-pawn-80.png"/></div>
-        <div class="square row-odd"><img src="./assets/icons/blue-style/icons8-pawn-80.png"/></div>
-        <div class="square row-even"><img src="./assets/icons/blue-style/icons8-rook-80.png"></div>
-        <div class="square row-even"><img src="./assets/icons/blue-style/icons8-knight-80.png"></div>
-        <div class="square row-even"><img src="./assets/icons/blue-style/icons8-bishop-80.png"></div>
-        <div class="square row-even" id="d1"><img src="./assets/icons/blue-style/icons8-queen-80.png"></div>
-        <div class="square row-even"><img src="./assets/icons/blue-style/icons8-king-80.png"></div>
-        <div class="square row-even" id="f1"><img src="./assets/icons/blue-style/icons8-bishop-80.png"></div>
-        <div class="square row-even"><img src="./assets/icons/blue-style/icons8-knight-80.png"></div>
-        <div class="square row-even"><img src="./assets/icons/blue-style/icons8-rook-80.png"></div>
+        <div class="square row-odd">
+          <img src="./assets/icons/blue-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/blue-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/blue-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/blue-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-odd" id="e2">
+          <img src="./assets/icons/blue-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/blue-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/blue-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-odd">
+          <img src="./assets/icons/blue-style/icons8-pawn-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/blue-style/icons8-rook-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/blue-style/icons8-knight-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/blue-style/icons8-bishop-80.png" />
+        </div>
+        <div class="square row-even" id="d1">
+          <img src="./assets/icons/blue-style/icons8-queen-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/blue-style/icons8-king-80.png" />
+        </div>
+        <div class="square row-even" id="f1">
+          <img src="./assets/icons/blue-style/icons8-bishop-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/blue-style/icons8-knight-80.png" />
+        </div>
+        <div class="square row-even">
+          <img src="./assets/icons/blue-style/icons8-rook-80.png" />
+        </div>
+      </div>
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </body>
