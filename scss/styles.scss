@@ -14,19 +14,19 @@ body {
 }
 
 #title {
-  font-size: 3em;
-  margin-bottom: 20px;
+  font-size: 4.9vmin;
+  margin-bottom: 2vmin;
   color: $title-color;
 }
 
 .chessboard-container {
-  border: 10px solid $border-color; 
+  border: 1.1vmin solid $border-color; 
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  width: 30vw;
-  height: 30vw;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
+  width: 31.2vw;
+  height: 31.2vw;
+  box-shadow: 0.2vmin 0.3vmin 1.5vmin rgba(0, 0, 0, 0.5);
   border-radius: 1%;
 }
 
@@ -50,39 +50,4 @@ img {
   max-width: 100%;
   max-height: 100%;
   width: 80%;
-}
-
-@media screen 
-  and (min-device-width: 200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-    .chessboard-container {
-      width: 600px;
-      height: 600px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-
-  #title {
-    font-size: 1em;
-    margin-bottom: 5px;
-  }
-
-  .loader {
-    margin-top: 20px;
-  }
-
-  .chessboard-container {
-    border: 5px solid $border-color;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-
-  .chessboard-container {
-    width: 600px;
-    height: 600px;
-  }
 }
