@@ -368,10 +368,9 @@ body {
   border: 1.1vmin solid #163152;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
   -ms-grid-rows: (1fr)[8];
-      grid-template-rows: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template: repeat(8, 1fr)/repeat(8, 1fr);
   width: 31.2vw;
   height: 31.2vw;
   -webkit-box-shadow: 0.2vmin 0.3vmin 1.5vmin rgba(0, 0, 0, 0.5);
